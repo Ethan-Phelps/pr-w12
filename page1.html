@@ -1,0 +1,74 @@
+<!--
+    -/ Create a full CRUD application of your choice using either an API or local Array.
+    -/    Use an existing API with AJAX to interact with it. 
+        If you do not use an API, store the entities you will create, read, update, and delete in an array. (might be wrong)
+    -/ Use a form to post new entities.
+    -/ Build a way for users to update or delete entities
+    -/ Use Bootstrap and CSS to style your project.
+-->
+<html>
+    <head>
+        <title>page1</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <style>
+            *     {padding: 0; margin: 0; text-align: center; user-select: none;}
+            body    {background-color: #222; }
+            #primary  {background-color: #000; height: 40vw; width: 82vw; color: #000; font-size: 0vw; }
+            #middle     {background-color: #000; height: 33vw; width: 82vw; color: #000; font-size: 0vw; padding: 0; margin: 0;}
+            #bottom     {background-color: #444; height: 07vw; width: 82vw; color: #000; font-size: 1vw; padding-top: 1vw;}
+            #m-left       {background-color: #000; height: 33vw; width: 35vw; color: #000; font-size: 0vw; }
+            #m-right      {background-color: #000; height: 33vw; width: 47vw; color: #000; font-size: 0vw; }
+            #m-l-top        {background-color: #888; height: 03vw; width: 35vw; color: #000; font-size: 2vw; }
+            #m-r-top        {background-color: #666; height: 03vw; width: 47vw; color: #000; font-size: 2vw; }
+            #m-l-bottom     {background-color: #777; height: 30vw; width: 35vw; color: #000; font-size: .5vw; overflow-y:auto; overflow-x: hidden;}
+            #m-r-bottom     {background-color: #555; height: 30vw; width: 47vw; color: #000; font-size: .5vw; overflow-y:auto; overflow-x: hidden;}
+            #ptable     {height: 03vw; width: 40vw; margin-left: 40vw; border: 0; }
+            #ptable th  {height: 1.5vw; width: 7vw; color: #fff; font-size: 1vw; line-height: .1vw;}
+            #ptable td  {height: 1.5vw; width: 30vw;}
+            #pname      {height: 1.5vw; width: 7vw; font-size: 1vw; border: 0;}
+            #pmove      {height: 1.5vw; width: 30vw; font-size: 1vw; border: 0;}
+            #pinput     {height: 2vw; width: 20vw; font-size: 1vw; border: .2vw solid #000;}
+            .apiece1      {background-color: #700; height: 03vw; width: 06vw; color: #000; font-size: 1vw; margin-left: 2vw;}
+            .apiece2      {background-color: #740; height: 03vw; width: 20vw; color: #000; font-size: 1vw; margin-left: 1vw;}
+            .apiece3      {background-color: #770; height: 03vw; width: 05vw; color: #000; font-size: 1vw; margin-left: 1vw;}
+            .upiece1      {background-color: #074; height: 03vw; width: 05vw; color: #000; font-size: 1vw; margin-left: 2vw;}
+            .upiece2      {background-color: #077; height: 03vw; width: 06vw; color: #000; font-size: 1vw; margin-left: 1vw;}
+            .upiece3      {background-color: #047; height: 03vw; width: 20vw; color: #000; font-size: 1vw; margin-left: 1vw;}
+            .upiece4      {background-color: #007; height: 03vw; width: 05vw; color: #000; font-size: 1vw; margin-left: 1vw;}
+            .upiece5      {background-color: #407; height: 03vw; width: 05vw; color: #000; font-size: 1vw; margin-left: 1vw;}
+        </style>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <div class="col-12 h-100 justify-content-center d-flex align-items-center">
+            <div id="primary">
+                <div id="middle" class="row">
+                    <div id="m-left">
+                        <div id="m-l-top"><b>Accepted</b></div>
+                        <div id="m-l-bottom">
+                        </div>
+                    </div>
+                    <div id="m-right">
+                        <div id="m-r-top"><b>Undecided</b></div>
+                        <div id="m-r-bottom">
+                        </div>
+                    </div>
+                </div>
+                <div id="bottom">
+                    <form id="pform">
+                        <table id="ptable">
+                            <th><label for="pname">Name:</label></th><th><label for="pmove">Movement:</label></th>
+                            <tr><td><input type="text" id="pname" name="pname"></td><td><input type="text" id="pmove" name="pmove"></td></tr>
+                            <tr><td></td><td><input id="pinput" type="submit" value="Add New Piece to Undecided"></td></tr>
+                        </table>
+                    </form> 
+                </div>
+            </div>
+        </div>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="program.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>
